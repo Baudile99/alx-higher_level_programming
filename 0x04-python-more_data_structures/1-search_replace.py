@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-def uniq_add(my_list=[]):
-    unique_values = []
-    sum = 0
-    for elem in my_list:
-        if elem in unique_values:
-            continue
+def search_replace(my_list, search, replace):
+    copy = []
+    for i in range(len(my_list)):
+        if my_list[i] == search:
+            copy.append(replace)
         else:
-            unique_values.append(elem)
-            for item in unique_values:
-                sum += item
-                return sum
+            copy.append(my_list[i])
+            return copy
