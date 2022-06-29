@@ -2,8 +2,6 @@
 """
 Empty class that defines a rectangle
 """
-
-
 class Rectangle:
-        """Empty function"""
-            pass
+    """Empty function"""
+    pass
